@@ -73,3 +73,27 @@
 def word_lengths(lst):
     return list(map(lambda x: len(x), lst))
 print(word_lengths(["hello", "world", "lambda"]))  # Output: [5, 5, 6]
+
+
+
+
+
+# Create a simple calculator using lambda functions for addition, subtraction, multiplication, and division.
+# def calculator(x, y, operation):
+#     return {
+#         'add': (lambda a, b: a + b)(x, y),
+#         'subtract': (lambda a, b: a - b)(x, y),
+#         'multiply': (lambda a, b: a * b)(x, y),
+#         'divide': (lambda a, b: a / b if b != 0 else 'Division by zero')(x, y)
+#     }.get(operation)
+# print(calculator(10, 5, 'add'))        # Output: 15
+# print(calculator(10, 5, 'subtract'))   # Output: 5  
+# print(calculator(10, 5, 'multiply'))   # Output: 50
+# print(calculator(10, 5, 'divide'))     # Output: 2.0
+# print(calculator(10, 0, 'divide'))     # Output: Division by zero
+
+# Use a lambda function to filter out negative numbers from a list.
+def filter_negative_numbers(lst):
+    return list(filter(lambda x: x >= 0, lst))  
+print(filter_negative_numbers([-1, 2, -3, 4, 5]))  # Output: [2, 4, 5]
+
